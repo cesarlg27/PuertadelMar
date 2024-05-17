@@ -6171,6 +6171,12 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 767.98px) {
+  .video-container {
+    height: 100vw;
+    width: auto;
+    position: relative;
+  }
+
   .offcanvas-md {
     position: fixed;
     bottom: 0;
