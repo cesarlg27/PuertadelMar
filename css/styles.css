@@ -11622,6 +11622,11 @@ html {
   height: 5rem;
 }
 
+.div-width{
+  width: 100%;
+  height: auto;
+}
+
 .profile-logo {
   display: block;
   margin-left: auto;
