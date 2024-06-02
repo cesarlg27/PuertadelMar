@@ -90,13 +90,14 @@
 .video-container {
   height: 42vw;
   width: auto;
-  position: relative;
+  
+  margin-top: 6rem;
 }
 
 .video-container video {
 width: 100vw;
 height: 100%;
-position: absolute;
+
 object-fit: cover;
 z-index: 0;
 }
@@ -3771,6 +3772,9 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4185,7 +4189,7 @@ textarea.form-control-lg {
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -7641,6 +7645,10 @@ textarea.form-control-lg {
 
 .mt-auto {
   margin-top: auto !important;
+}
+
+.mt-15 {
+  margin-top: 9rem !important;
 }
 
 .me-0 {
