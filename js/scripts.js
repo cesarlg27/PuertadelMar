@@ -35,3 +35,38 @@ setInterval(nextSlide, 3000); // Change image every 3 seconds
 
 // Initial display
 showSlide(currentIndex);
+
+// function sendMail(){
+//     let params = {
+//         from_name : document.getElementById("name").value,
+//         reply_to : document.getElementById("email").value,
+//         phone : document.getElementById("phone").value,
+//         message : document.getElementById("message").value,
+//     }
+//     alert("enviado 1")
+//     console.log("is it even clicking?")
+//     preventDefault()
+//     emailjs.send("service_67kk2ri","template_vxi6t2e", params).then(alert("Mensaje Enviado!"))
+//     alert("enviado 2")
+// }
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_vxi6t2e';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
