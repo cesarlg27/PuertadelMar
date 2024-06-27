@@ -5818,7 +5818,11 @@ textarea.form-control-lg {
 }
 
 .carousel {
+  /* z-index: 10; */
   position: relative;
+  max-width: 1000px;
+  margin: auto;
+  
 }
 
 .carousel.pointer-event {
@@ -7925,6 +7929,11 @@ textarea.form-control-lg {
   padding-left: 0 !important;
 }
 
+.px-neg {
+  padding-right: -10 !important;
+  padding-left: -10 !important;
+}
+
 .px-1 {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important;
@@ -8007,6 +8016,10 @@ textarea.form-control-lg {
 
 .pt-5 {
   padding-top: 3rem !important;
+}
+
+.pt-6 {
+  padding-top: 7rem !important;
 }
 
 .pe-0 {
@@ -11799,14 +11812,6 @@ html {
   }
 }
 
-.carousel {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-  border: 2px solid #ddd;
-}
-
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease;
@@ -11820,6 +11825,7 @@ html {
 .carousel-item img {
   width: 100%;
   display: block;
+  position: sticky;
 }
 
 .carousel-control {
@@ -11871,4 +11877,56 @@ input[type="submit"] {
   background-color: #4460AA;
   color: #fff;
   border: none
+}
+
+.lot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.lot-comer{
+  width: 110px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.lot {
+  width: 4vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.lot-s {
+  width: 2.8vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.available {
+  background-color: green;
+}
+
+.pending {
+  background-color: yellow;
+  color: black; /* Adjust text color for readability */
+}
+
+.sold {
+  background-color: red;
 }
