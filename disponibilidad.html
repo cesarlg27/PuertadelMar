@@ -61,22 +61,21 @@
               
             <!-- Page Content-->
             <div class="container px-0 mt-15"> 
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Disponibilidad</span></h1>
+                <div class="text-center">
+                    <h1 class="display-5 fw-bolder"><span class="text-success d-inline">Disponibilidad</span></h1>
                 </div>
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-11 col-xl-9">
-                        <!-- Experience Section-->
-                        
-                            <div class="d-flex align-items-center justify-content-sm-around">
-                                <span>Elige tu lote residencial. Los lotes marcados en rojo están ya vendidos. </span>
-                        
+                        <img class="div-width" src="assets/Disponibilidad.jpeg" alt="Disponibilidad de Lotes Residenciales"/>
+                        <div class="d-flex align-items-center justify-content-sm-around">
+                            <div class="d-flex text-center mb-4">
+                                <div class="lot legend available mx-2">Disponible</div>
+                                <div class="lot legend pending mx-2">En Contrato</div>
+                                <div class="lot legend sold mx-2">Vendido</div>
                             </div>
-                            <img
-                                        class="div-width"
-                                        src="assets/Disponibilidad.jpeg"
-                                        alt="Disponibilidad de Lotes Residenciales"/>
-
+                            <h4>Elige tu lote: </h4>
+                        </div>
+                        
                         
                             <!-- Manzana 1             -->
                             <h3 class="display-5 fw-bolder mb-0">Manzana 1</h3>
@@ -272,7 +271,7 @@
                             <!-- Manzana 6             -->
                             <h3 class="display-5 fw-bolder mb-0">Manzana 6</h3>
                             <h4 class="mb-4">Lotes Residenciales</h4>
-                            <div class="justify-content-center mb-5">
+                            <div class="lot-container justify-content-center mb-5">
                                 <!-- Lots 16 to 30 -->
                                 <div class="lot-container justify-content-center">
                                     <div class="lot available" id="lotL1">L10</div>
@@ -285,6 +284,7 @@
                                     <div class="lot available" id="lotL2">L17</div>
                                     <div class="lot available" id="lotL3">L18</div>                                    
                                 </div>
+                                
                                
                                 <!-- Lots 1 to 15 -->
                                 <div class="lot-container justify-content-center">
@@ -452,7 +452,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Manzana 12             -->
+                            <!-- Manzana 13             -->
                             <h3 class="display-5 fw-bolder mb-0">Manzana 13</h3>
                             <h4 class="mb-4">Lotes Residenciales</h4>
                             <div class="lot-container justify-content-center mb-5">
@@ -473,9 +473,102 @@
                                 <div class="lot available" id="lotL1">L1</div>
                             </div>
                             </div>
-
                     </div>
                 </div>
+            </div>
+
+                <!-- Reserva tu Lote -->
+                <section class="bg-success">
+                    <div class="container px-5 mt-5 pt-5">
+                    <div class="text-center mb-5">
+                      <h1 class="display-5 fw-bolder mb-0"><span class="text-white d-inline">Reserva tu Lote</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9">
+                    <span class="text-white">Para reservar tu lote, escoge entre los lotes disponibles y llena la Solicitud de Compra. Envíanos tu Solicitud de Compra por email a puertadelmar@discover-mx.com o por Whatsapp al 322 263 0333.</span>
+                    
+                    <div class="text-center justify-content-center mt-4">
+                        <h2 class="fw-bolder">Descarga</h2>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-sm-around my-5">
+                    <!-- Note: Set the link href target to a PDF file within your project-->
+                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
+                          <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
+                          <div class="d-inline-block bi bi-download me-2"></div>
+                          Lista de Precios 2024
+                      </a>
+                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
+                        <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
+                        <div class="d-inline-block bi bi-download me-2"></div>
+                        Solicitud de Compra
+                    </a>
+                    </div>
+
+                    <div class="text-center justify-content-center mt-4">
+                        <h2 class="fw-bolder">Selecciona tu Lote</h2>
+                    </div>
+
+                    <!-- form -->
+                    <div class="row gx-5 justify-content-center my-5">
+                        <div class="col-lg-8 col-xl-6">
+                    <form action="https://formsubmit.co/5bebdcfd12c5848822eaf06cb0f4970e" method="POST" id="contactForm">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Nombre y Apellido</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input name="phone" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Celular con Whatsapp</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Manzana / Lote</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <input type="hidden" name="_next" value="http://puertadelmar.mx/">
+                        <input type="hidden" name="_cc" value="cesarlg27@gmail.com">
+                        <input type="hidden" name="_autoresponse" value="Gracias por tu interés en Puerta del Mar!">
+
+
+
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Enviar</button></div>
+                    </form>
+                    </section>
+                </div>
+            </div>
+                  
+                </div>
+              </div>
             </div>
         </main>
         <!-- Footer-->
@@ -483,6 +576,7 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Copyright &copy; Discover MX 2024</div></div>
+                    <div class="col-auto">TEST</div>
                     <div class="col-auto">
                         <a class="small" href="contact.html">Contacto</a>
                         <span class="mx-1">&middot;</span>

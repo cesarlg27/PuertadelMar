@@ -659,6 +659,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  z-index: 1;
 }
 
 @media (min-width: 576px) {
@@ -1954,6 +1955,17 @@ progress {
   .table-responsive-sm {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .video-background {
+    position: absolute;
+    z-index: 0; /* Ensure content appears on top of the video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    border: 0;
+    pointer-events: none;  /* Prevent interaction with the video */
   }
 }
 @media (max-width: 767.98px) {
@@ -7643,6 +7655,11 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 
+.my-10{
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
 .my-15 {
   margin-top: 9rem !important;
   margin-bottom: 9rem !important;
@@ -7740,6 +7757,11 @@ textarea.form-control-lg {
 .mb-5 {
   margin-bottom: 3rem !important;
 }
+
+.mb-10 {
+  margin-bottom: 6rem !important;
+}
+
 
 .mb-auto {
   margin-bottom: auto !important;
@@ -7985,6 +8007,11 @@ textarea.form-control-lg {
 .px-10 {
   padding-right: 6rem !important;
   padding-left: 6rem !important;
+}
+
+.px-15 {
+  padding-right: 9rem !important;
+  padding-left: 9rem !important;
 }
 
 .py-0 {
@@ -11927,7 +11954,11 @@ input[type="submit"] {
   justify-content: center;
   color: white;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 1px;
+}
+
+.legend{
+  width: 5rem;
 }
 
 .lot-s {
@@ -11938,7 +11969,7 @@ input[type="submit"] {
   justify-content: center;
   color: white;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .available {
@@ -11952,4 +11983,45 @@ input[type="submit"] {
 
 .sold {
   background-color: #dd3545;
+}
+
+.video-background {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 80vh; 
+  /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+  z-index: 0; /* Ensure content appears on top of the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;  /* Prevent interaction with the video */
+}
+
+.map-background {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 80vh; 
+  /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.content-vid {
+  position: relative;
+  color: white; /* Example text color */
+  text-align: center;
+  padding: 20px;
+}
+
+.tiny-pic{
+  width: 50%;
+  height: 100%;
 }
