@@ -18,6 +18,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
@@ -68,14 +69,63 @@
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-11 col-xl-9">
                         <img class="div-width" src="assets/Disponibilidad.jpeg" alt="Disponibilidad de Lotes Residenciales"/>
+                    </div>    
+                </div>      
+            </div>   
+                        <!-- Reserva tu Lote -->
+                <section class="bg-success">
+                    <div class="container px-5 mt-5 pt-5">
+                    <div class="text-center mb-5">
+                      <h1 class="display-5 fw-bolder mb-0"><span class="text-white d-inline">Reserva tu Lote</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9">
+                    <span class="text-white">Para reservar tu lote, escoge entre los lotes disponibles y llena la Solicitud de Compra. Envíanos tu Solicitud de Compra por email a puertadelmar@discover-mx.com o por Whatsapp al 322 263 0333.</span>
+                    
+                    <div class="text-center justify-content-center mt-4">
+                        <h2 class="fw-bolder">Descarga</h2>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-sm-around my-5">
+                    <!-- Note: Set the link href target to a PDF file within your project-->
+                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
+                          <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
+                          <div class="d-inline-block bi bi-download me-2"></div>
+                          Lista de Precios 2024
+                      </a>
+                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
+                        <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
+                        <div class="d-inline-block bi bi-download me-2"></div>
+                        Solicitud de Compra
+                    </a>
+                    </div>
+
+                    <div class="text-center justify-content-center mt-4">
+                        <h2 class="fw-bolder">Escríbenos</h2>
+                    </div>
+                    <div class="container px-15 pb-5">
+                        <div class=" align-items-center justify-content-between text-center">
+                          <div class="col-auto text-white"> Teléfono / Whatsapp: <a href="tel:+52(322)2630333"> (322) 263 0333</a></div>
+                          <div class="col-auto text-white"><div class="small m-0">Email: <a href="mailto:puertadelmar@discover-mx.com">puertadelmar@discover-mx.com</a></div></div>
+                        </div>
+                      </div>                
+                    
+                </section>
+                        
+                <div class="container px-0 mt-5"> 
+                <div class="row gx-0 justify-content-center">
+
                         <div class="d-flex align-items-center justify-content-sm-around">
-                            <div class="d-flex text-center mb-4">
+                            <div class="d-flex text-center my-4 align-items-center">
+                                <h4>Leyenda:</h4>
                                 <div class="lot legend available mx-2">Disponible</div>
                                 <div class="lot legend pending mx-2">En Contrato</div>
                                 <div class="lot legend sold mx-2">Vendido</div>
                             </div>
                             <h4>Elige tu lote: </h4>
                         </div>
+
+                        
                         
                         
                             <!-- Manzana 1             -->
@@ -273,7 +323,7 @@
                             <h3 class="display-5 fw-bolder mb-0">Manzana 6</h3>
                             <h4 class="mb-4">Lotes Residenciales</h4>
                             <div class="lot-container justify-content-center mb-5">
-                                <!-- Lots 16 to 30 -->
+                                <!-- Lots 10 to 18 -->
                                 <div class="lot-container justify-content-center">
                                     <div class="lot available" id="lotL1">L10</div>
                                     <div class="lot available" id="lotL2">L11</div>
@@ -285,10 +335,9 @@
                                     <div class="lot available" id="lotL2">L17</div>
                                     <div class="lot available" id="lotL3">L18</div>                                    
                                 </div>
-                                
-                               
-                                <!-- Lots 1 to 15 -->
-                                <div class="lot-container justify-content-center">
+                               <br>
+                                <!-- Lots 9 to 1 -->
+                                <div class="container lot-container justify-content-center">
                                     <div class="lot available" id="lotL3">L9</div>
                                     <div class="lot available" id="lotL3">L8</div>
                                     <div class="lot available" id="lotL3">L7</div>
@@ -304,7 +353,7 @@
                             <!-- Manzana 7             -->
                             <h3 class="display-5 fw-bolder mb-0">Manzana 7</h3>
                             <h4 class="mb-4">Lotes Residenciales</h4>
-                            <div class="lot-container justify-content-center mb-5">
+                            <div class="container lot-container justify-content-center mb-5 px-5">
                                 <!-- Lots 16 to 30 -->
                                 <div class="lot-container justify-content-center">
                                     <div class="lot available" id="lotL3">L12</div> 
@@ -319,6 +368,7 @@
                                     <div class="lot available" id="lotL1">L21</div>
                                     <div class="lot available" id="lotL2">L22</div>
                                 </div>
+                                <br>
                                 <!-- Lots 1 to 15 -->
                                 <div class="lot-container justify-content-center">
                                     <div class="lot available" id="lotL3">L11</div>
@@ -474,52 +524,11 @@
                                 <div class="lot available" id="lotL1">L1</div>
                             </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-                <!-- Reserva tu Lote -->
-                <section class="bg-success">
-                    <div class="container px-5 mt-5 pt-5">
-                    <div class="text-center mb-5">
-                      <h1 class="display-5 fw-bolder mb-0"><span class="text-white d-inline">Reserva tu Lote</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9">
-                    <span class="text-white">Para reservar tu lote, escoge entre los lotes disponibles y llena la Solicitud de Compra. Envíanos tu Solicitud de Compra por email a puertadelmar@discover-mx.com o por Whatsapp al 322 263 0333.</span>
-                    
-                    <div class="text-center justify-content-center mt-4">
-                        <h2 class="fw-bolder">Descarga</h2>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-sm-around my-5">
-                    <!-- Note: Set the link href target to a PDF file within your project-->
-                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
-                          <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
-                          <div class="d-inline-block bi bi-download me-2"></div>
-                          Lista de Precios 2024
-                      </a>
-                      <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder mx-2" href="./assets/LotesDisponibles.pdf">
-                        <!--file://C:\Users\mac\Documents\PuertaDelMarWebsite\PuertadelMar\assets\LotesDisponibles.pdf-->
-                        <div class="d-inline-block bi bi-download me-2"></div>
-                        Solicitud de Compra
-                    </a>
-                    </div>
-
-                    <div class="text-center justify-content-center mt-4">
-                        <h2 class="fw-bolder">Escríbenos</h2>
-                    </div>
-                    <div class="container px-15 pb-5">
-                        <div class=" align-items-center justify-content-between text-center">
-                          <div class="col-auto"> Teléfono / Whatsapp: <a href="tel:+52(322)2630333"> (322) 263 0333</a></div>
-                          <div class="col-auto"><div class="small m-0">Email: <a href="mailto:puertadelmar@discover-mx.com">puertadelmar@discover-mx.com</a></div></div>
-                        </div>
-                      </div>                
-                    
-                </section>
-                
-                  
-                </div>
+        </div>
               </div>
             </div>
         </main>
