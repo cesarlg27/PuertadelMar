@@ -102,7 +102,9 @@ object-fit: cover;
 z-index: 0;
 }
 
-
+.bg-color {
+  background: rgba(22, 98, 220, 0.871);
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -4733,7 +4735,7 @@ textarea.form-control-lg {
   color: #6d0e3e;
 }
 
-.alert-success {
+.alert-bg-primary {
   --bs-alert-color: #0f5132;
   --bs-alert-bg: #d1e7dd;
   --bs-alert-border-color: #badbcc;
@@ -11954,7 +11956,9 @@ input[type="submit"] {
   justify-content: center;
   color: white;
   font-weight: bold;
-  border-radius: 1px;
+  border-radius: 10px;
+  border: #000;
+  border-width: 20px;
 }
 
 .legend{
